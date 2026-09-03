@@ -1,0 +1,291 @@
+body{
+    margin: 0;
+    padding-top: 90px;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.navbar{
+    width: 90%;
+    margin: 20px auto;
+    background: rgb(171, 210, 224);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 15px;
+    padding: 10px;
+}
+
+.navbar img{
+    width: 20px;
+    border-radius: 50%;
+}
+
+.navbar span{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding-right: 20px;
+}
+
+.nav-container{
+    display: flex;
+    column-gap: 25px;
+    text-decoration: none   ;
+}
+
+.nav-container a{
+    text-decoration: none ;
+    color: white;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.menu{
+    display:none ;
+}
+
+/* Home Section */
+
+.home{
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.home h1{
+    margin: 0;
+    font-size: 60px;
+}
+
+.radikal{
+    color: rgb(0, 191, 255); font-size: 50%;
+}
+
+.intro{
+    width: 40%;
+}
+
+.main-img img{
+   width: 350px;
+   border-radius: 20px;
+}
+
+/* About Section */
+
+.about{
+     margin: 50px 20px;
+}
+
+.section-body{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.section-title{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.about-me,
+.eductional-background,
+.hobies-intrest{
+    width: 350px;
+    line-height: 24px;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 16px;
+}
+
+/* Courses */
+
+.courses{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 100px;
+}
+
+.courses h2{
+    text-align: center;
+}
+
+.courses table,
+.courses tr,
+.courses th,
+.courses td{
+     border: 1px solid rgba(128, 128, 128, 0.4);
+     border-collapse: collapse;
+     padding: 8px;
+     text-align: left;
+}
+
+.gallery{
+     margin: 50px 20px;
+     text-align: center;
+}
+
+.gallery-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    padding: 20px;
+    box-shadow: 2px 5px 15px  rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+}
+
+.figcaption{
+    padding-top: 8px;
+}
+
+/* Contact */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+    padding: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    width: 40%;
+    box-shadow: 2px 5px 15px  rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+input{
+    padding: 8px;
+}
+
+textarea{
+    height: 100px;
+}
+
+label{
+    font-weight: 600;
+}
+
+.submit{
+    background-color: rgb(0, 143, 0);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+/* Footer */
+
+.footer{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    color: white;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: row;
+        height: auto;
+        padding: 10px;
+        gap: 1px;
+    }
+    .navbar a{
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 12px;
+        transition: 0.3s;
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .navbar a:hover{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 141, 197);
+        font-weight: 500;
+        border-radius: 12px;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 7px 
+            }
+
+    .nav-container{
+     display: none;
+        
+}       
+    .nav-container a{   
+        color: black;
+
+}  
+    .home {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 30px 20px;
+    }
+    .home h1{
+        font-size: 32px;
+    }
+
+    .menu{
+         display:block ;
+}
+
+    .intro {
+        width: 100%;
+    }
+
+    .main-img img {
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .section-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me,
+    .eductional-background,
+    .hobies-intrest {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .courses {
+        margin: 20px;
+        overflow-x: auto;
+    }
+}
